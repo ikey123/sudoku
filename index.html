@@ -4,27 +4,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>数独游戏</title>
+    <title>Sudoku Game</title>
     <link rel="stylesheet" href="style.css"> <!-- 链接到 CSS 文件 -->
 </head>
 
 <body>
-    <h1>数独游戏</h1>
+    <h1>Sudoku Game</h1>
     <!-- 添加数字颜色说明 -->
     <p>
-        说明：
-        <span style="color: black;">黑色的数字是给出的题</span>，
-        <span style="color: red;">红色的数字是错误的</span>，
-        <span style="color: green;">绿色的数字是正确的</span>，
-        <span style="color: blue;">蓝色的数字是给的答案</span>。
-    </p>
+        Instructions:
+        <span style="color: black;">Black numbers are the given clues</span>,
+        <span style="color: red;">Red numbers are incorrect</span>,
+        <span style="color: green;">Green numbers are correct</span>,
+        <span style="color: blue;">Blue numbers are provided answers</span>.
+     </p>
     <div id="sudoku">
         <!-- 数独 9x9 网格将在这里生成 -->
     </div>
     <script src="sudoku.js"></script> <!-- 链接到 JavaScript 文件 -->
     <div id="button-container">
-        <button id="generate">随机出题</button>
-        <button id="solve">显示答案</button>
+        <button id="generate">Generate Puzzle</button>
+        <button id="solve">Show Solution</button>
     </div>
     
 
