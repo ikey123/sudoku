@@ -137,4 +137,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         return array;
     }
+
+const testDB = document.getElementById('testDB');
+testDB=addEventListener('click', () => {
+     handler();
+    });
+
+
+    
 });
