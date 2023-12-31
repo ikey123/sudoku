@@ -1,6 +1,6 @@
-//route.ts
-import { sql } from '@vercel/postgres';
-
+//route.js
+//import { sql } from '@vercel/postgres';
+const { sql } = require('@vercel/postgres');
 export default async function handler(
   request: VercelRequest,
   response: VercelResponse,
