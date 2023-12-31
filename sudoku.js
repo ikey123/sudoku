@@ -138,10 +138,24 @@ document.addEventListener('DOMContentLoaded', () => {
         return array;
     }
 
+// 假设您的 HTML 中有一个 id 为 'testDB' 的元素
 const testDB = document.getElementById('testDB');
-testDB=addEventListener('click', () => {
-     handler();
-    });
+
+// 添加点击事件监听器
+testDB.addEventListener('click', async () => {
+  try {
+    const response = await fetch('/api/route'); // 发起到后端接口的请求
+    if (response.ok) {
+      const data = await response.json();
+      console.log('Database operation successful:', data);
+      // 在这里处理从后端返回的数据
+    } else {
+      throw new Error('Failed to fetch data');
+    }
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    // 在这里处理错误
+  }
 
 
     
