@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 // 假设您的 HTML 中有一个 id 为 'testDB' 的元素
-const testDB = document.getElementById('testDB');
+/*const testDB = document.getElementById('testDB');
 
 // 添加点击事件监听器
 testDB.addEventListener('click', async () => {
@@ -156,7 +156,7 @@ testDB.addEventListener('click', async () => {
     console.error('Error fetching data:', error);
     // 在这里处理错误
   }
-
+*/
 
     
 });
